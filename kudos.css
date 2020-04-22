@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+html body {
+    height: 100vh;
+}
+
+body {
+    padding-top: 0
+}
+
+b,strong {
+    font-weight: 600
+}
+
+.okWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  background: linear-gradient(337deg, #20134a, #244cb7);
+  background-size: 400% 400%;
+  -webkit-animation: mainGradient 12s ease infinite;
+  -moz-animation: mainGradient 12s ease infinite;
+  animation: mainGradient 12s ease infinite;
+}
+
+.forestWrapper {
+  background: url(https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80);
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+#buttonWrapper {
+  width: 100%;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#everythingButtons {
+  display: flex;
+  align-self: flex-end;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-flex;
+  height: 40px;
+  width: 100px;
+  border: 1px solid #BFC0C0;
+  margin: 10px 10px 10px 10px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#githubButton {
+  margin-bottom: -15px;
+  margin-right: 10px;
+}
+
+#githubButton img {
+  width: 32px;
+}
+
+.button span {
+  color: #BFC0C0;
+  letter-spacing: 1px;
+  font-family: 'Cambo', serif;
+}
+
+#underline {
+  width: 100%;
+  height: 2.5px;
+  margin-top: 15px;
+  align-self: flex-end;
+  left: -200px;
+  background: #BFC0C0;
+  position: absolute;
+  transition: all .3s ease-Out;
+  bottom: 0;
+}
+
+.button:hover #underline {
+  left: 0;
+}
+
+#everythingOK {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  color: #fff;
+  font-size: 52px;
+  font-family: 'Cambo', serif;
+}
+
+#reallyText {
+  font-size: 30px;
+  margin-top: 30px;
+  border: 1px solid #BFC0C0;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+@-webkit-keyframes mainGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes mainGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes mainGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@media screen and (max-width:450px){
+  #everythingOK {
+    font-size: 62px;
+  }
+
+  #reallyText {
+    font-size: 50px;
+  }
+
+  .button {
+    width: 250px;
+    height: 110px;
+    font-size: 1.8em;
+  }
+
+  #underline {
+    left: -250px;
+  }
+}
