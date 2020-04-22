@@ -126,6 +126,7 @@ a {
   cursor: pointer;
   border-radius: 5px;
   padding: 10px;
+  color: #fff;
 }
 
 @-webkit-keyframes mainGradient {
