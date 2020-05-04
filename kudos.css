@@ -15,7 +15,7 @@ b,strong {
     font-weight: 600
 }
 
-#okWrapper {
+.okWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
