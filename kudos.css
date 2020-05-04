@@ -21,18 +21,8 @@ b,strong {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  background: linear-gradient(337deg, #20134a, #244cb7);
+  background: #E5E5E5;
   background-size: 400% 400%;
-  -webkit-animation: mainGradient 12s ease infinite;
-  -moz-animation: mainGradient 12s ease infinite;
-  animation: mainGradient 12s ease infinite;
-}
-
-.forestWrapper {
-  background: url(https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80);
-  -webkit-animation: none;
-  -moz-animation: none;
-  animation: none;
 }
 
 #buttonWrapper {
@@ -115,43 +105,28 @@ a {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
   color: #fff;
-  font-size: 52px;
-  font-family: 'Cambo', serif;
+  font-size: 64px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
 }
 
 #reallyText {
   font-size: 30px;
   margin-top: 30px;
-  border: 1px solid #BFC0C0;
+  border: 2px solid #fff;
   cursor: pointer;
   border-radius: 5px;
   padding: 10px;
   color: #fff;
 }
 
-@-webkit-keyframes mainGradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes mainGradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes mainGradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
 @media screen and (max-width:450px){
   #everythingOK {
-    font-size: 62px;
+    font-size: 52px;
   }
 
   #reallyText {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .button {
