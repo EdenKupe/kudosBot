@@ -25,6 +25,10 @@ b,strong {
   background-size: 400% 400%;
 }
 
+#botHead {
+  margin-bottom: 30px;
+}
+
 #buttonWrapper {
   width: 100%;
   align-self: flex-start;
