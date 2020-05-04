@@ -15,7 +15,7 @@ b,strong {
     font-weight: 600
 }
 
-.okWrapper {
+#okWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +23,12 @@ b,strong {
   height: 100%;
   background: #060337;
   background-size: 400% 400%;
+}
+
+#logo {
+  align-self: baseline;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 #botHead {
