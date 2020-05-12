@@ -37,6 +37,7 @@ function checkState() {
     if (engagementState.state == 1) {
       targetText.classList.add('clickable');
       targetParent.classList.add('clickable');
+      return false;
     }
   }
   setTimeout(checkState, 2000);
