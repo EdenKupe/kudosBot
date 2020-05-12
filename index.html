@@ -19,22 +19,22 @@
     <div id="everythingOK">
       <img id="botHead" src="img/botHead.png" />
       <span id="okText">Welcome to the <b>Kudos Bot!</b></span>
-      <a href="" onclick="startEngagement(event)" id="reallyText"><span id="innerOK">Click here to get started</span></a>
+      <a href="" onclick="startEngagement(event)" id="reallyText"><span class="innerOK">Click here to get started</span></a>
     </div>
   </div>
 </body>
 <script type="text/javascript">
-function startEngagement (event) {
-  event.preventDefault();
-  lpTag.taglets.rendererStub.click(1588497950);
-}
 function checkState() {
-  let targetText = document.getElementById('innerOK');
+  let targetText = document.getElementsByClass('innerOK');
   if (lpTag && lpTag.taglets && lpTag.taglets.rendererStub) {
     let engagementState = lpTag.taglets.rendererStub.getEngagementState(1588497950);
     console.log(engagementState);
     if (engagementState.state == 1) {
-      targetText.classList.add('visible');
+      targetText.classList.add('clickable');
+      function startEngagement (event) {
+        event.preventDefault();
+        lpTag.taglets.rendererStub.click(1588497950);
+      }
     }
   }
   setTimeout(checkState, 2000);

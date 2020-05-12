@@ -25,12 +25,12 @@ b,strong {
   background-size: 400% 400%;
 }
 
-#innerOK {
-  display: none;
+.innerOK {
+  opacity: 0.7;
 }
 
-.visible {
-  display: block;
+.clickable {
+  opacity: 1;
 }
 
 #logo {
