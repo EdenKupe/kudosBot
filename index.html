@@ -30,7 +30,7 @@ function startEngagement (event) {
 }
 function checkState() {
   let engagementState = lpTag.taglets.rendererStub;
-  if engagementState {
+  if (engagementState) {
     console.log("I'm here");
   }
   setTimeout(checkState, 5000);
