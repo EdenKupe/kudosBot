@@ -28,5 +28,11 @@ function startEngagement (event) {
   event.preventDefault();
   lpTag.taglets.rendererStub.click(1588497950);
 }
+function checkState() {
+  let engagementState = lpTag.taglets.rendererStub.getEngagementState(1588497950);
+  console.log(engagementState);
+  setTimeout(checkState, 5000);
+}
+checkState();
 </script>
 </html>
