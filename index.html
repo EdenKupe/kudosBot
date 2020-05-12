@@ -29,11 +29,12 @@ function startEngagement (event) {
   lpTag.taglets.rendererStub.click(1588497950);
 }
 function checkState() {
+  let targetText = document.getElementById('okText');
   if (lpTag && lpTag.taglets && lpTag.taglets.rendererStub) {
     let engagementState = lpTag.taglets.rendererStub.getEngagementState(1588497950);
     console.log(engagementState);
     if (engagementState.state == 1) {
-      console.log("I'm here");
+      target.classList.add('visible');
     }
   }
   setTimeout(checkState, 2000);

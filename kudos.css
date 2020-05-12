@@ -25,6 +25,14 @@ b,strong {
   background-size: 400% 400%;
 }
 
+#okText {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 #logo {
   align-self: baseline;
   margin-left: 50px;
